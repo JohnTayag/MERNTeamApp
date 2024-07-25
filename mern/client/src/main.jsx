@@ -7,7 +7,7 @@ import {
 import App from "./App";
 import Record from "./components/Record";
 import RecordList from "./components/RecordList";
-import Matches from "./components/Matches";
+import Match from "./components/Match";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -43,12 +43,12 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/matches",
+    path: "/match",
     element: <App />,
     children: [
       {
-        path: "/matches",
-        element: <Matches />,
+        path: "/match",
+        element: <Match />,
       },
     ],
   },
